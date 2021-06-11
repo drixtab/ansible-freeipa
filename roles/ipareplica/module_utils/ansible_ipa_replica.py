@@ -195,6 +195,9 @@ else:
         def info(self, msg):
             self.module.debug(msg)
 
+        def isatty(self):
+            return False
+                      
         def write(self, msg):
             self.module.debug(msg)
             # self.module.warn(msg)
